@@ -2,7 +2,6 @@ class TabLink {
   constructor(tabElement){
     // assign this.tabElement to the tabElement DOM reference
     this.tabElement = tabElement;
-    console.log(this.tabElement);
     // Get the `data-tab` value from this.tabElement and store it here
     this.tabData = this.tabElement.dataset.tab; 
     
@@ -23,6 +22,7 @@ class TabLink {
     */
 
     this.cards = Array.from(this.cards).map(card => new TabCard(card));
+
 
     // Add a click event that invokes this.selectTab
     this.tabElement.addEventListener('click', () => this.selectTab());
@@ -45,6 +45,7 @@ class TabLink {
     cards.forEach(card => {
       card.style.display = 'none';
     });
+
     
     // Add a class of ".active-tab" to this.tabElement
     this.tabElement.classList.add('active-tab');
@@ -62,7 +63,7 @@ class TabCard {
   }
   selectCard(){
     // Update the style of this.cardElement to display = "flex"
-    this.cardElement.display = 'flex';
+    this.cardElement.style.display = 'flex';
   }
 }
 
@@ -77,3 +78,8 @@ class TabCard {
 */
 
 let tabs = document.querySelectorAll('.tab').forEach( tab => new TabLink(tab) );
+
+
+
+
+
