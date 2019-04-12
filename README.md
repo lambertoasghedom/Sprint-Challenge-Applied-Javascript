@@ -32,13 +32,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+```
+The DOM connects web pages to scripts or programming languages. It also represents the document as nodes and objects. That way, programming languages can connect to the page.
+```
 2. What is an event?
 
+```
+JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page.
+```
 3. What is an event listener?
+
+```
+An event listener is a method in a program waiting for that event to occur.
+```
 
 4. Why would we convert a NodeList into an Array?
 
+```
+To give the NodeList array methods
+```
+
 5. What is a component?
+```
+A piece of code you can use multiple times.
+```
 
 ### Git Set up
 
